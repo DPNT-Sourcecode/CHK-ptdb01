@@ -4,7 +4,10 @@
 # skus = unicode string
 def checkout(skus):
     """
-    Input string is not defined. ignore characters that aren't A, B, C or D.
+    Input string isn't defined, so I can only work with the given examples. Run the following checks:
+    - Check input parameter is a string.
+    - Check there are no '-' characters.
+    - Check there are no lowercase a, b, c, d characters. (It seems the letter x should be skipped)
     """
     
     if type(skus) == str:
@@ -26,4 +29,5 @@ def checkout(skus):
     else:
         
         return -1
+
 
