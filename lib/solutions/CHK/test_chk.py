@@ -31,10 +31,10 @@ print("BABDDCAC",sol.checkout("BABDDCAC") == 215)
 print("AAABB",sol.checkout("AAABB") == 175)
 print("ABCDCBAABCABBAAA",sol.checkout("ABCDCBAABCABBAAA") == 495)
 
-print("ABCDCBAABCABBAAAEEE",sol.checkout("ABCDCBAABCABBAAAEEE") == 585)
-print("ABCDCBAABCABBAAAE",sol.checkout("ABCDCBAABCABBAAAE") == 535)
+print("ABCDCBAABCABBAAAEEE",sol.checkout("ABCDCBAABCABBAAAEEE"),sol.checkout("ABCDCBAABCABBAAAEEE") == 585)
+print("ABCDCBAABCABBAAAE",sol.checkout("ABCDCBAABCABBAAAE"),sol.checkout("ABCDCBAABCABBAAAE") == 535)
 print("BBBB",sol.checkout("BBBB") == 90)
-print("BBBBEEEEEEEEEE",sol.checkout("BBBBEEEEEEEEEE") == 240)
+print("BBBBEEEEEEEEEE",sol.checkout("BBBBEEEEEEEEEE"),sol.checkout("BBBBEEEEEEEEEE") == 400)
 
 # +------+-------+------------------------+
 # | Item | Price | Special offers         |
@@ -45,5 +45,3 @@ print("BBBBEEEEEEEEEE",sol.checkout("BBBBEEEEEEEEEE") == 240)
 # | D    | 15    |                        |
 # | E    | 40    | 2E get one B free      |
 # +------+-------+------------------------+
-
-

@@ -9,7 +9,7 @@ def checkout(skus):
     - Check there are no characters besides A, B, C or D in the string.
     """
     
-    if (type(skus) == str) and all([character in ['A','B','C','D'] for character in skus]):
+    if (type(skus) == str) and all([character in ['A','B','C','D','E'] for character in skus]):
         order = {
             'A': 0,
             'B': 0,
@@ -36,7 +36,3 @@ def checkout(skus):
     else:
         
         return -1
-
-
-
-
