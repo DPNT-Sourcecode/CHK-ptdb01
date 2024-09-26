@@ -47,7 +47,3 @@ print("UUUUUUUU", sol.checkout("UUUUUUUU"), sol.checkout("UUUUUUUU") == 240)
 # | D    | 15    |                        |
 # | E    | 40    | 2E get one B free      |
 # +------+-------+------------------------+
-
-
-
-

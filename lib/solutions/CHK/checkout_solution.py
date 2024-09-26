@@ -43,6 +43,3 @@ def checkout(skus):
     else:
         
         return -1
-
-
-
