@@ -31,7 +31,7 @@ print("FFFFFFFFFFFF",sol.checkout("FFFFFFFFFFFF"),sol.checkout("FFFFFFFFFFFF") =
 print("FF",sol.checkout("FF"),sol.checkout("FF") == 20)
 print("FFF",sol.checkout("FFF"),sol.checkout("FFF") == 20)
 print("ABCDCBAABCABBAAAFFFF", sol.checkout("ABCDCBAABCABBAAAFFFF"), sol.checkout("ABCDCBAABCABBAAAFFFF") == 525)
-print("ABCDEFGHIJKLMNOPQRSTUVWXYZ", sol.checkout("ABCDEFGHIJKLMNOPQRSTUVWXYZ"), sol.checkout("ABCDEFGHIJKLMNOPQRSTUVWXYZ") == 965)
+print("ABCDEFGHIJKLMNOPQRSTUVWXYZ", sol.checkout("ABCDEFGHIJKLMNOPQRSTUVWXYZ"), sol.checkout("ABCDEFGHIJKLMNOPQRSTUVWXYZ") == 837)
 print("UUU", sol.checkout("UUU"), sol.checkout("UUU") == 120)
 print("UUUU", sol.checkout("UUUU"), sol.checkout("UUUU") == 120)
 print("UUUUU", sol.checkout("UUUUU"), sol.checkout("UUUUU") == 160)
@@ -40,7 +40,7 @@ print("UUUUUUUU", sol.checkout("UUUUUUUU"), sol.checkout("UUUUUUUU") == 240)
 print("KK", sol.checkout("KK"), sol.checkout("KK") == 120)
 print("KKK", sol.checkout("KKK"), sol.checkout("KKK") == 190)
 
-print("STXYZZZZ", sol.checkout("STXYZZZZ"), sol.checkout("STXYZZZZ") == 37)
+print("STXYZZZZ", sol.checkout("STXYZZZZ"), sol.checkout("STXYZZZZ") == 127)
 print("STXXXYZZZZ", sol.checkout("STXXXYZZZZ"), sol.checkout("STXXXYZZZZ") == 152)
 print("ZZZZ", sol.checkout("ZZZZ"), sol.checkout("ZZZZ") == 66)
 print("STTXYZZZZ", sol.checkout("STTXYZZZZ"), sol.checkout("STTXYZZZZ") == 135)
@@ -55,4 +55,5 @@ print("STTYZZZZ", sol.checkout("STTYZZZZ"), sol.checkout("STTYZZZZ") == 110)
 # | D    | 15    |                        |
 # | E    | 40    | 2E get one B free      |
 # +------+-------+------------------------+
+
 
