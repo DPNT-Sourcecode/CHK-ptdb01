@@ -4,7 +4,7 @@
 # skus = unicode string
 def checkout(skus):
     """
-    Input string is not defined. we'll intentonially fail to find out.
+    Input string is not defined. ignore characters that aren't A, B, C or D.
     """
 
     order = {
@@ -14,13 +14,10 @@ def checkout(skus):
         'D': 0
     }
     
-    for 
+    for character in skus:
+        if character in order:
+            order[character] += 1
     
+    total = 130*(order['A']//3) + 50*(order['A'] % 3) + 45*(order['B']//2) + 30*(order['B'] % 2) + 20*order['C'] + 15*order['D']
     
-    raise NotImplementedError()
-
-
-A    | 50    | 3A for 130     |
-| B    | 30    | 2B for 45      |
-| C    | 20    |                |
-| D    | 15    |                |
+    return total
