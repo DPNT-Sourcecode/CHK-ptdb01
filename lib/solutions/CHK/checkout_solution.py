@@ -6,8 +6,7 @@ def checkout(skus):
     """
     Input string isn't defined, so I can only work with the given examples. Run the following checks:
     - Check input parameter is a string.
-    - Check there are no '-' characters.
-    - Check there are no lowercase a, b, c, d characters. (It seems the letter x should be skipped)
+    - Check there are no characters besides A, B, C or D in the string.
     """
     
     if (type(skus) == str) and all([character in ['A','B','C','D'] for character in skus]):
