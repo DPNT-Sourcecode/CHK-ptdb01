@@ -19,7 +19,7 @@ def checkout(skus):
         
         costs = {character: 0 for character in "ABCDEFGHIJKLMNOPQRSTUVWXYZ"}
         
-        non_offer_coeffs = {'C': 20, 'D': 15, 'E': 40, 'G': 20, 'I': 35, 'J': 60, 'L': 90, 'N': 15, 'O': 10, 'R': 50, 'S': 30, 'T': 20, 'W': 20, 'X': 90, 'Y': 10, 'Z': 50}
+        non_offer_coeffs = {'C': 20, 'D': 15, 'E': 40, 'G': 20, 'I': 35, 'J': 60, 'L': 90, 'N': 40, 'O': 10, 'R': 50, 'S': 30, 'T': 20, 'W': 20, 'X': 90, 'Y': 10, 'Z': 50}
         for non_offer_char in 'CDEGIJLNORSTWXYZ':
             costs[non_offer_char] = non_offer_coeffs[non_offer_char]*items[non_offer_char]
         
@@ -29,7 +29,7 @@ def checkout(skus):
         costs['F'] = 20*(items['F']//3) + 10*(items['F'] % 3)
         costs['H'] = 80*(items['H']//10) + 45*((items['H'] % 10)//5) + 10*((items['H'] % 10) % 5)
         costs['K'] = 150*(items['K']//2) + 80*(items['K'] % 2)
-        costs['M'] = 20*max([items['M'] - (items['N']//3), 0])
+        costs['M'] = 15*max([items['M'] - (items['N']//3), 0])
         costs['P'] = 200*(items['P']//5) + 50*(items['P'] % 5)
         Q_to_buy = max([items['Q'] - (items['R']//3), 0])
         costs['Q'] = 80*(Q_to_buy//3) + 30*(Q_to_buy % 3)
@@ -43,3 +43,4 @@ def checkout(skus):
     else:
         
         return -1
+
