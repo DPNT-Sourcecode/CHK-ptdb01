@@ -7,8 +7,7 @@ def checkout(skus):
     Input string is not defined. ignore characters that aren't A, B, C or D.
     """
     
-    try:
-        
+    if type(skus) == str:
         order = {
             'A': 0,
             'B': 0,
@@ -24,6 +23,7 @@ def checkout(skus):
         
         return int(total)
     
-    except:
+    else:
+        
         return -1
 
