@@ -10,7 +10,7 @@ def checkout(skus):
     - Check there are no lowercase a, b, c, d characters. (It seems the letter x should be skipped)
     """
     
-    if type(skus) == str:
+    if (type(skus) == str) and ('-' not in skus) and not any([letter in skus for letter in ['a','b','c','d']]):
         order = {
             'A': 0,
             'B': 0,
