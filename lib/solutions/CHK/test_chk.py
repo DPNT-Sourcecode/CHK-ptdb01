@@ -1,6 +1,6 @@
 import checkout_solution as sol
-print(sol.checkout("2ABCBABCBABCBAC2222")==395)
-print(sol.checkout("A, B, C, D, E, A, B, C")==200)
+print(sol.checkout("2ABCBABCBABCBAC2222")==-1)
+print(sol.checkout("A, B, C, D, E, A, B, C")==-1)
 print(sol.checkout(420)==-1)
 print(sol.checkout(["A","B","C","D"])==-1)
 
@@ -12,7 +12,7 @@ print(sol.checkout("D") == 15)
 print(sol.checkout("a") == -1)
 print(sol.checkout("-") == -1)
 print(sol.checkout("ABCa") == -1)
-print(sol.checkout("AxA") == 100)
+print(sol.checkout("AxA") == -1)
 print(sol.checkout("ABCD") == 115)
 print(sol.checkout("A") == 50)
 print(sol.checkout("AA") == 100)
