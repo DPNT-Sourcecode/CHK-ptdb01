@@ -20,11 +20,20 @@ def checkout(skus):
         for character in skus:
             if character in order:
                 order[character] += 1
+                
+        B_to_buy = order['B'] - order['E']//2
         
-        total = 130*(order['A']//3) + 50*(order['A'] % 3) + 45*(order['B']//2) + 30*(order['B'] % 2) + 20*order['C'] + 15*order['D']
+        total = (
+            200*(order['A']//5) + 130*((order['A']//5)//3) + 50*((order['A'] % 5) % 3) +
+            45*(B_to_buy//2) + 30*(B_to_buy % 2)
+            20*order['C'] +
+            15*order['D'] + 
+            40*order['E']
+        )
         
         return int(total)
     
     else:
         
         return -1
+
