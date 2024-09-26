@@ -1,17 +1,5 @@
 import checkout_solution as sol
 
-# print(sol.checkout("2ABCBABCBABCBAC2222")==-1)
-# print(sol.checkout("A, B, C, D, E, A, B, C")==-1)
-# print(sol.checkout(420)==-1)
-# print(sol.checkout(["A","B","C","D"])==-1)
-
-# print(sol.checkout("") == 0)
-# print(sol.checkout("A") == 50)
-# print(sol.checkout("B") == 30)
-# print(sol.checkout("C") == 20)
-# print(sol.checkout("D") == 15)
-# print(sol.checkout("a") == -1)
-# print(sol.checkout("-") == -1)
 print(sol.checkout("ABCa") == -1)
 print(sol.checkout("AxA") == -1)
 print(sol.checkout("ABCD") == 115)

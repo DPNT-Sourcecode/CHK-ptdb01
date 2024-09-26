@@ -38,6 +38,15 @@ print("UUUU", sol.checkout("UUUU"), sol.checkout("UUUU") == 120)
 print("UUUUU", sol.checkout("UUUUU"), sol.checkout("UUUUU") == 160)
 print("UUUUUUUU", sol.checkout("UUUUUUUU"), sol.checkout("UUUUUUUU") == 240)
 
+print("KK", sol.checkout("KK"), sol.checkout("KK") == 120)
+print("KKK", sol.checkout("KKK"), sol.checkout("KKK") == 190)
+
+print("STXYZZZZ", sol.checkout("STXYZZZZ"), sol.checkout("STXYZZZZ") == 37)
+print("STXXXYZZZZ", sol.checkout("STXXXYZZZZ"), sol.checkout("STXXXYZZZZ") == 152)
+print("ZZZZ", sol.checkout("ZZZZ"), sol.checkout("ZZZZ") == 66)
+print("STTXYZZZZ", sol.checkout("STTXYZZZZ"), sol.checkout("STTXYZZZZ") == 135)
+print("STTYZZZZ", sol.checkout("STTYZZZZ"), sol.checkout("STTYZZZZ") == 110)
+
 # +------+-------+------------------------+
 # | Item | Price | Special offers         |
 # +------+-------+------------------------+
