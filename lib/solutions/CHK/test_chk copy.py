@@ -4,7 +4,6 @@ print(sol.checkout("ABCa") == -1)
 print(sol.checkout("AxA") == -1)
 print(sol.checkout("ABCD") == 115)
 print("A",sol.checkout("A") == 50)
-print(200*(1//5) + 130*((1 % 5)//3) + 50*((1 % 5) % 3))
 print("AA",sol.checkout("AA") == 100)
 print("AAA",sol.checkout("AAA") == 130)
 print("AAAA",sol.checkout("AAAA") == 180)
@@ -56,3 +55,4 @@ print("STTYZZZZ", sol.checkout("STTYZZZZ"), sol.checkout("STTYZZZZ") == 110)
 # | D    | 15    |                        |
 # | E    | 40    | 2E get one B free      |
 # +------+-------+------------------------+
+

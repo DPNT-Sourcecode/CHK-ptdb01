@@ -20,8 +20,7 @@ def checkout(skus):
         costs = {character: 0 for character in "ABCDEFGHIJKLMNOPQRSTUVWXYZ"}
         
         bulk_discount_count = sum([items[character] for character in 'STXYZ'])
-        print(bulk_discount_count)
-        costs['multi'] = 45*(bulk_discount_count//3)
+        costs['multi'] = 45*(0//3)
         bulk_discount_included = bulk_discount_count - (bulk_discount_count % 3)
         for character in 'ZSTYX':
             remaining_characters = min(bulk_discount_included, items[character])
@@ -45,11 +44,6 @@ def checkout(skus):
         costs['U'] = 120*(items['U']//4) + 40*(items['U'] % 4)
         costs['V'] = 130*(items['V']//3) + 90*((items['V'] % 3)//2) + 50*((items['V'] % 3) % 2)
         
-        bulk_discount_count = [items[character] for character in 'STXYZ']
-        costs['multi'] = 45*(bulk_discount_count//3)
-        
-# | K    | 70    | 2K for 120                      |
-        
         total = sum(list(costs.values()))
         
         return int(total)
@@ -57,4 +51,5 @@ def checkout(skus):
     else:
         
         return -1
+
 
