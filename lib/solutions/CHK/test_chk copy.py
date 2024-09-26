@@ -33,6 +33,7 @@ print("FF",sol.checkout("FF"),sol.checkout("FF") == 20)
 print("FFF",sol.checkout("FFF"),sol.checkout("FFF") == 20)
 print("ABCDCBAABCABBAAAFFFF", sol.checkout("ABCDCBAABCABBAAAFFFF"), sol.checkout("ABCDCBAABCABBAAAFFFF") == 525)
 print("ABCDEFGHIJKLMNOPQRSTUVWXYZ", sol.checkout("ABCDEFGHIJKLMNOPQRSTUVWXYZ"), sol.checkout("ABCDEFGHIJKLMNOPQRSTUVWXYZ") == 965)
+print("UUU", sol.checkout("UUU"), sol.checkout("UUU") == 120)
 
 # +------+-------+------------------------+
 # | Item | Price | Special offers         |
@@ -43,4 +44,5 @@ print("ABCDEFGHIJKLMNOPQRSTUVWXYZ", sol.checkout("ABCDEFGHIJKLMNOPQRSTUVWXYZ"), 
 # | D    | 15    |                        |
 # | E    | 40    | 2E get one B free      |
 # +------+-------+------------------------+
+
 

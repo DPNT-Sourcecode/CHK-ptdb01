@@ -33,7 +33,7 @@ def checkout(skus):
         costs['P'] = 200*(items['P']//5) + 50*(items['P'] % 5)
         Q_to_buy = max([items['Q'] - (items['R']//3), 0])
         costs['Q'] = 80*(Q_to_buy//3) + 30*(Q_to_buy % 3)
-        costs['U'] = 80*(items['U']//3) + 40*(items['U'] % 3)
+        costs['U'] = 80*(items['U']//4) + 40*(items['U'] % 4)
         costs['V'] = 130*(items['V']//3) + 90*((items['V'] % 3)//2) + 50*((items['V'] % 3) % 2)
         
         total = sum(list(costs.values()))
@@ -43,4 +43,5 @@ def checkout(skus):
     else:
         
         return -1
+
 
