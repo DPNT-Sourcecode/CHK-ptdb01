@@ -28,3 +28,18 @@ print(sol.checkout("ABCDABCD") == 215)
 print(sol.checkout("BABDDCAC") == 215)
 print(sol.checkout("AAABB") == 175)
 print(sol.checkout("ABCDCBAABCABBAAA") == 505)
+
+print(sol.checkout("ABCDCBAABCABBAAAEEE") == 505)
+print(sol.checkout("ABCDCBAABCABBAAAE") == 505)
+print(sol.checkout("BBBB") == 505)
+print(sol.checkout("BBBBEEEE") == 505)
+
+# +------+-------+------------------------+
+# | Item | Price | Special offers         |
+# +------+-------+------------------------+
+# | A    | 50    | 3A for 130, 5A for 200 |
+# | B    | 30    | 2B for 45              |
+# | C    | 20    |                        |
+# | D    | 15    |                        |
+# | E    | 40    | 2E get one B free      |
+# +------+-------+------------------------+
