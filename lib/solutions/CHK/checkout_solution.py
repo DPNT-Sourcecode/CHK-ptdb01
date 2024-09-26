@@ -21,9 +21,10 @@ def checkout(skus):
         for character in skus:
             if character in order:
                 order[character] += 1
-                
+        
+        A_condition = order['A']//5 if order['A'] >= 5 else 0
         B_to_buy = max([order['B'] - order['E']//2, 0])
-        A_cost = 200*(order['A']//5) + 130*((order['A']//5)//3) + 50*((order['A'] % 5) % 3)
+        A_cost = 200*A_condition + 130*((order['A']//5)//3) + 50*((order['A'] % 5) % 3)
         B_cost = 45*(B_to_buy//2) + 30*(B_to_buy % 2)
         C_cost = 20*order['C']
         D_cost = 15*order['D']
@@ -36,5 +37,6 @@ def checkout(skus):
     else:
         
         return -1
+
 
 
