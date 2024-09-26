@@ -35,7 +35,15 @@ print("ABCDCBAABCABBAAAEEE",sol.checkout("ABCDCBAABCABBAAAEEE"),sol.checkout("AB
 print("ABCDCBAABCABBAAAE",sol.checkout("ABCDCBAABCABBAAAE"),sol.checkout("ABCDCBAABCABBAAAE") == 535)
 print("BBBB",sol.checkout("BBBB") == 90)
 print("BBBBEEEEEEEEEE",sol.checkout("BBBBEEEEEEEEEE"),sol.checkout("BBBBEEEEEEEEEE") == 400)
-print(max([4 - 10//2, 0]))
+
+print("ABCDCBAABCABBAAAE",sol.checkout("ABCDCBAABCABBAAAE"),sol.checkout("ABCDCBAABCABBAAAE") == 535)
+print("BBBB",sol.checkout("BBBB") == 90)
+print("BBBBEEEEEEEEEE",sol.checkout("BBBBEEEEEEEEEE"),sol.checkout("BBBBEEEEEEEEEE") == 400)
+
+print("FFFFFFFFFFFF",sol.checkout("FFFFFFFFFFFF"),sol.checkout("FFFFFFFFFFFF") == 80)
+print("FF",sol.checkout("FF"),sol.checkout("FF") == 20)
+print("FFF",sol.checkout("FFF"),sol.checkout("FFF") == 20)
+print("ABCDCBAABCABBAAAFFFF", sol.checkout("ABCDCBAABCABBAAAFFFF"), sol.checkout("ABCDCBAABCABBAAAFFFF") == 525)
 
 # +------+-------+------------------------+
 # | Item | Price | Special offers         |
