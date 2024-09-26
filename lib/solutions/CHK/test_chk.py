@@ -35,6 +35,7 @@ print("ABCDCBAABCABBAAAEEE",sol.checkout("ABCDCBAABCABBAAAEEE"),sol.checkout("AB
 print("ABCDCBAABCABBAAAE",sol.checkout("ABCDCBAABCABBAAAE"),sol.checkout("ABCDCBAABCABBAAAE") == 535)
 print("BBBB",sol.checkout("BBBB") == 90)
 print("BBBBEEEEEEEEEE",sol.checkout("BBBBEEEEEEEEEE"),sol.checkout("BBBBEEEEEEEEEE") == 400)
+print(max([4 - 10//2, 0]))
 
 # +------+-------+------------------------+
 # | Item | Price | Special offers         |
